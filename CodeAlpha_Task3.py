@@ -5,7 +5,7 @@ import seaborn as sns
 
 df = pd.read_csv("quotes.csv")
 
-# Top authors ka graph
+# Top authors graph
 top_authors = df['Author'].value_counts().head(5)
 
 plt.figure(figsize=(7,5))
@@ -22,3 +22,4 @@ plt.title("Distribution of Quote Lengths")
 plt.xlabel("Length of Quotes")
 plt.ylabel("Frequency")
 plt.show()
+
